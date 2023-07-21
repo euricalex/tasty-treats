@@ -4,6 +4,11 @@ body {
     margin: 0;
     padding: 0;
 }
+.list {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
  .backdrop {
     position: fixed;
     top: 0;
@@ -12,4 +17,109 @@ body {
     background: rgba(46, 47, 66, 0.4);
     z-index: 1;
   }
+  .pop-up-recipe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 531px;
+    height: 805px;
+    border-radius: 15px;
+    background: #FFF;
+    overflow-y: scroll; 
+  }
+  .close-recipe-svg {
+   position: absolute;
+   top: 16px;
+   left: 480px;
+  }
+  .pop-up-recipe-header {
+    position: relative;
+    color: #050505;
+margin-top: 32px;
+margin-left: 32px;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.22; 
+text-transform: uppercase;
+  }
+  .video-recipe {
+    margin-left: 32px;
+    width: 467px;
+height: 250px;
+flex-shrink: 0;
+border-radius: 8px;
+  }
+  .tags-buttons {
+    margin-top: 16px;
+    margin-left: 32px;
+    gap: 8px;
+  }
+  .tag-btn {
+
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    color: #050505;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.16;
+  background-color: transparent;
+  cursor: pointer;
+    border-radius: 35px;
+border: 1px solid rgba(5, 5, 5, 0.20);
+  }
+  .recipe-list {
+    margin-left: 32px;
+    margin-top: 32px;
+    display: block;
+    padding-left: 0; /* Reset the default padding for the list */
+  }
   
+  .recipe-item {
+    margin-bottom: 18px;
+    color: #050505;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+    list-style: none; /* Remove default list bullet */
+    border-bottom: 1px solid rgba(5, 5, 5, 0.10);
+   /* Add the horizontal line */
+
+    /* padding-bottom: 10px;  */
+    /* Adjust spacing between text and the line */
+  }
+  .recipe-description {
+    margin-left: 32px;
+    max-width: 450px;
+  }
+  .btn-add-favourite {
+    cursor: pointer;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    color: #F8F8F8;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    border: none;
+    padding: 14px 28px;
+justify-content: center;
+align-items: center;
+    border-radius: 15px;
+background: #9BB537;
+  }
+  .btn-add-favourite:hover,
+  .btn-add-favourite:focus {
+    background-color: #9BB537;
+    color: #050505;
+
+  }

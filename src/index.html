@@ -4,10 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-  <div class="backdrop"></div>
-        <script type="module" src="./index.js"></script>
+    <div class="backdrop">
+      <div class="pop-up-recipe">
+        <h2 class="pop-up-recipe-header">Banana Cakes</h2>
+        <svg class="close-recipe-svg" width="18" height="18"> 
+          <use href="./symbol-defs.svg#icon-closeblack"></use>
+        </svg>
+        <iframe
+          class="video-recipe"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; encrypted-media; picture-in-picture"
+        ></iframe>
+
+        <div class="tags-buttons list">
+          <button class="tag-btn" type="button">#Breakfast</button>
+          <button class="tag-btn" type="button">#Desert</button>
+          <button class="tag-btn" type="button">#Sweet</button>
+        </div>
+        <ul class="recipe-list list">
+          <li class="recipe-item">Banana</li>
+          <li class="recipe-item">Eggs</li>
+          <li class="recipe-item">Oil</li>
+          <li class="recipe-item">Pecan nuts</li>
+          <li class="recipe-item">Baking Powder</li>
+          <li class="recipe-item">Raspberries</li>
+        </ul>
+        <p class="recipe-description">
+          Mash the ripe banana in a medium mixing bowl. Add the egg and whisk
+          together until well combined. Add the flour, baking powder, cinnamon
+          (if using), and salt, and stir until just combined.Heat a non-stick
+          skillet or griddle over medium heat and add the vegetable oil or
+          melted butter. Scoop the batter onto the skillet or griddle using a
+          1/4 cup measure, and cook for 2-3 minutes on each side, or until the
+          pancakes are golden brown and cooked through. Serve warm with your
+          favorite toppings such as maple syrup, sliced bananas, or whipped
+          cream.
+        </p>
+        <button type="button" class="btn-add-favourite">Add to favorite</button>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
